@@ -19,7 +19,7 @@ export default function Home() {
 				alt="riturdio"
 			/>
 			<Image
-				className="h-auto w-[80vw] max-w-[420px] rounded-xl"
+				className="h-auto shiver  w-[80vw] max-w-[420px] rounded-xl"
 				src={riturdio}
 				width={0}
 				height={0}
