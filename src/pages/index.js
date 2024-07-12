@@ -14,6 +14,10 @@ export default function Home() {
     <Image className="w-[69vw] shiver max-w-[500px] h-auto" src={ritardio} width={0} height={0} alt="riturdio" />
     <Image className="w-[80vw] rounded-xl max-w-[420px] h-auto" src={riturdio} width={0} height={0} alt="riturdio" />
     <Links />
+    <div className="flex flex-col gap-2 items-center">
+      <p className="font-bold text-white text-2xl">riturdio.sol</p>
+      <p className="text-xs text-white">CawA7rHFU1RarXiNpVr3TXLn5dYsjLLL9oFSeaNkjLHU</p>
+    </div>
     </main>
   );
 }
