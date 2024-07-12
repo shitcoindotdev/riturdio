@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes marioColors {
+  0%, 100% { background-color: #e32636; } /* Red */
+  16% { background-color: #008000; } /* Green */
+  32% { background-color: #ffd700; } /* Yellow */
+  48% { background-color: #0000ff; } /* Blue */
+  64% { background-color: #ff4500; } /* Orange */
+  80% { background-color: #ffffff; } /* Black */
+}
+
+/* Create a custom class for the animation */
+.bg-mario-colors {
+  animation: marioColors 3s ease infinite;
+}
+
+@keyframes shiver {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Adjust the value for the desired shivering effect */
+  }
+}
+
+.shiver {
+  animation: shiver 0.05s ease-in infinite; /* Adjust the duration for the speed of shivering */
+}
