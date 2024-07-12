@@ -26,7 +26,7 @@
 
 /* Create a custom class for the animation */
 .bg-mario-colors {
-	animation: marioColors 3s ease infinite;
+	animation: marioColors 1s ease infinite;
 }
 
 @keyframes shiver {
