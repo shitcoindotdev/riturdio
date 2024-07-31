@@ -30,7 +30,8 @@ export default function Home() {
 			</div>
 			<div className="mx-8 flex max-w-[600px] flex-col gap-6 text-center text-[16px] sm:text-[20px]">
 				<p>
-					Onigiri, named after the iconic Japanese food 🍙 due to its unique fur pattern, is the cat 🐈‍⬛ of{' '}
+					Onigiri, named after the iconic Japanese food&nbsp;🍙 due to its unique fur pattern, is the
+					cat&nbsp;🐈‍⬛ of{' '}
 					<a
 						target="_blank"
 						className="pointer-cursor"
