@@ -62,7 +62,7 @@ export default function Home() {
 			<p className="text-[16px] font-semibold sm:text-[20px]">Stay up to date with $ONIGIRI 🍙🐈‍⬛🍙</p>
 			<Links />
 			{/* <div className="flex flex-col items-center gap-2">
-				<p className="text-2xl font-bold text-white">riturdio.sol</p>
+				<p className="text-2xl font-bold text-white">onigiri.sol</p>
 				<p className="text-xs text-white">CawA7rHFU1RarXiNpVr3TXLn5dYsjLLL9oFSeaNkjLHU</p>
 			</div> */}
 		</main>
