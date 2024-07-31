@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function CopyCa({ contractAddress }) {
+function Copyca({ contractAddress }) {
 	const [showToast, setShowToast] = useState(false)
 
 	function copyOnClick(e) {
@@ -21,7 +21,7 @@ function CopyCa({ contractAddress }) {
 	return (
 		<div
 			onClick={copyOnClick}
-			className="relative flex cursor-pointer items-center justify-center gap-2 border bg-pink-200 px-4 py-2 shadow-md"
+			className="relative flex cursor-pointer items-center justify-center gap-2 rounded-md border border-black/15 bg-white px-8 py-2 shadow-lg"
 		>
 			<span>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -39,10 +39,14 @@ function CopyCa({ contractAddress }) {
 					></path>
 				</svg>
 			</span>
-			<span>{contractAddress}</span>
-			{true && <div className="absolute mb-4 rounded bg-black px-2 py-1 text-xs text-white">Address copied!</div>}
+			<span className="text-[12px] sm:text-[20px]">{contractAddress}</span>
+			{showToast && (
+				<div className="absolute -top-8 flex items-center justify-center rounded bg-black px-2 py-1 text-xs text-white">
+					Address copied! 🍙
+				</div>
+			)}
 		</div>
 	)
 }
 
-export default CopyCa
+export default Copyca

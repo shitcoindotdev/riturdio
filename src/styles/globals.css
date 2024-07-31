@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* RotateOnHover.css */
+.rotating-element {
+	transition: transform 0.3s ease; /* Smooth transition */
+	cursor: pointer;
+}
+
+.rotating-element:hover {
+	transform: rotate(10deg); /* Rotate 10 degrees on hover */
+}

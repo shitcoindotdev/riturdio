@@ -3,12 +3,12 @@ import Image from 'next/image'
 function Links({ className }) {
 	return (
 		<ul className={`flex items-center justify-center gap-4 sm:gap-8 xl:flex-row xl:gap-10 ${className}`}>
-			<li className="shiver">
+			<li className="">
 				<a target="_blank" href="https://x.com/RiturdioSOL">
 					<Image className="h-[77px] w-[auto]" src="/xlogo.svg" height={0} width={0} alt="twitter logo" />
 				</a>
 			</li>
-			<li className="shiver">
+			<li className="">
 				<a target="_blank" href="https://t.me/RiturdioSOL">
 					<Image
 						className="h-[77px] w-[auto]"
@@ -19,7 +19,7 @@ function Links({ className }) {
 					/>
 				</a>
 			</li>
-			<li className="shiver flex h-[77px] w-[77px] items-center justify-center rounded-full bg-[#f381cc]">
+			<li className="flex h-[77px] w-[77px] items-center justify-center rounded-full bg-[#f381cc]">
 				<a target="_blank" href="https://dexscreener.com/solana/3jsizpkz3ka4kt6lcrp6evh16cesenlxgwihjwzuwph1">
 					<svg
 						className="h-auto w-[50px] sm:h-14 lg:h-20"
@@ -36,7 +36,7 @@ function Links({ className }) {
 					</svg>
 				</a>
 			</li>
-			<li className="shiver">
+			<li className="">
 				<a
 					target="_blank"
 					href="https://www.dextools.io/app/en/solana/pair-explorer/3jsizpKZ3ka4kT6LCRP6Evh16CeSEnLxGWiHjwzuwPh1?t=1720816193301"
