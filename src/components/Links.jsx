@@ -4,7 +4,7 @@ function Links({ className }) {
 	return (
 		<ul className={`flex items-center justify-center gap-4 sm:gap-8 xl:flex-row xl:gap-10 ${className}`}>
 			<li className="">
-				<a target="_blank" href="https://x.com/onigiriethcto">
+				<a target="_blank" href="https://x.com/onigiricoineth">
 					<Image className="h-[77px] w-[auto]" src="/xlogo.svg" height={0} width={0} alt="twitter logo" />
 				</a>
 			</li>
