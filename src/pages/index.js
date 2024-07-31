@@ -51,7 +51,7 @@ export default function Home() {
 					</a>
 					is most known for being the mother of Kabosu, widely known as Doge online. Kabosu unfortunately
 					passed away on May 24, 2024. While there's no replacing her impact and legacy, her little friend
-					Onigiri plans to claim her spot as the biggest coin on Solana.
+					Onigiri plans to claim her spot as the biggest coin on Ethereum.
 				</p>
 			</div>
 			<Copyaddress contractAddress={'0xA7f0C9E21DeE78B4c99c78dBeda53724Eb6af062'} />
