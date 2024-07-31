@@ -54,9 +54,13 @@ export default function Home() {
 				</p>
 			</div>
 			<Copyaddress contractAddress={'0xA7f0C9E21DeE78B4c99c78dBeda53724Eb6af062'} />
-			<button className="rounded-xl bg-pink-400 px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg">
+			<a
+				target="_blank"
+				href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xA7f0C9E21DeE78B4c99c78dBeda53724Eb6af062"
+				className="rounded-xl bg-pink-400 px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg"
+			>
 				Buy some $onigiri!
-			</button>
+			</a>
 			<TweetEmbed tweetUrl={'https://x.com/kabosumama/status/1036063695162421248/photo/1'} />
 			<Image className="w-[400px] max-w-[69%] rounded-lg shadow-lg" src={onigiribro} />
 			<p className="text-[16px] font-semibold sm:text-[20px]">Stay up to date with $ONIGIRI 🍙🐈‍⬛🍙</p>
