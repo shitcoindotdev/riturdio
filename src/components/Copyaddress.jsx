@@ -1,20 +1,32 @@
 import React, { useState } from 'react'
 
-function Copyaddress({ contractAddress }) {
+function CopyAddress({ contractAddress }) {
 	const [showToast, setShowToast] = useState(false)
 
 	function copyOnClick(e) {
 		e.preventDefault() // Prevent any default behavior
 		if (contractAddress) {
-			navigator.clipboard
-				.writeText(contractAddress)
-				.then(() => {
-					setShowToast(true)
-					setTimeout(() => setShowToast(false), 2000) // Hide toast after 2 seconds
-				})
-				.catch((err) => {
-					console.error('Could not copy text: ', err)
-				})
+			if (navigator.clipboard) {
+				navigator.clipboard
+					.writeText(contractAddress)
+					.then(() => {
+						setShowToast(true)
+						setTimeout(() => setShowToast(false), 2000) // Hide toast after 2 seconds
+					})
+					.catch((err) => {
+						console.error('Could not copy text: ', err)
+					})
+			} else {
+				// Fallback if navigator.clipboard is not supported
+				const textArea = document.createElement('textarea')
+				textArea.value = contractAddress
+				document.body.appendChild(textArea)
+				textArea.select()
+				document.execCommand('copy')
+				document.body.removeChild(textArea)
+				setShowToast(true)
+				setTimeout(() => setShowToast(false), 2000)
+			}
 		}
 	}
 
@@ -22,6 +34,7 @@ function Copyaddress({ contractAddress }) {
 		<div
 			onClick={copyOnClick}
 			className="relative flex cursor-pointer items-center justify-center gap-2 rounded-md border border-black/15 bg-white px-8 py-2 shadow-lg"
+			aria-live="polite" // For screen readers to announce changes
 		>
 			<span>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -49,4 +62,4 @@ function Copyaddress({ contractAddress }) {
 	)
 }
 
-export default Copyaddress
+export default CopyAddress
