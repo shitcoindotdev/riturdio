@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import { Nunito } from 'next/font/google'
 import Links from '@/components/Links'
-import Copyca from '@/components/Copyca'
 import onigiri from '/public/onigiri.png'
 import onigiribro from '/public/onigiribro.jpeg'
 import onigirismad from '/public/onigirismad.jpeg'
 import cuteonigiri from '/public/cuteonigiri.jpeg'
 import onigiritrio from '/public/onigiritrio.jpeg'
 import TweetEmbed from '@/components/TweetEmbed'
+import Copyaddress from '@/components/Copyaddress'
 
 const nunito = Nunito({ subsets: ['latin'] })
 
@@ -53,7 +53,7 @@ export default function Home() {
 					Onigiri plans to claim her spot as the biggest coin on Solana.
 				</p>
 			</div>
-			<Copyca contractAddress={'0xA7f0C9E21DeE78B4c99c78dBeda53724Eb6af062'} />
+			<Copyaddress contractAddress={'0xA7f0C9E21DeE78B4c99c78dBeda53724Eb6af062'} />
 			<button className="rounded-xl bg-pink-400 px-8 py-3 text-[20px] font-semibold tracking-tight text-white shadow-lg">
 				Buy some $onigiri!
 			</button>
