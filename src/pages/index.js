@@ -14,7 +14,7 @@ const nunito = Nunito({ subsets: ['latin'] })
 export default function Home() {
 	return (
 		<main
-			className={`flex min-h-screen w-full flex-col items-center gap-10 overflow-hidden bg-pink-100 py-12 text-[20px] font-semibold sm:px-8 ${nunito.className}`}
+			className={`flex min-h-screen w-full flex-col items-center gap-10 overflow-hidden bg-pink-100 py-6 text-[20px] font-semibold sm:px-8 ${nunito.className}`}
 		>
 			<Image src={onigiri} width={1000} height={600} className="w-[600px] max-w-[85%]" />
 			<div className="flex w-full justify-evenly sm:justify-center sm:gap-6">
