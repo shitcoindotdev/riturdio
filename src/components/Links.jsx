@@ -4,12 +4,12 @@ function Links({ className }) {
 	return (
 		<ul className={`flex items-center justify-center gap-4 sm:gap-8 xl:flex-row xl:gap-10 ${className}`}>
 			<li className="">
-				<a target="_blank" href="https://x.com/onigiriSOL">
+				<a target="_blank" href="https://x.com/onigiriethcto">
 					<Image className="h-[77px] w-[auto]" src="/xlogo.svg" height={0} width={0} alt="twitter logo" />
 				</a>
 			</li>
 			<li className="">
-				<a target="_blank" href="https://t.me/onigiriSOL">
+				<a target="_blank" href="https://t.me/onigiri_cto">
 					<Image
 						className="h-[77px] w-[auto]"
 						src="/telegramlogo.svg"
@@ -20,7 +20,7 @@ function Links({ className }) {
 				</a>
 			</li>
 			<li className="flex h-[77px] w-[77px] items-center justify-center rounded-full bg-[#f381cc]">
-				<a target="_blank" href="https://dexscreener.com/solana/3jsizpkz3ka4kt6lcrp6evh16cesenlxgwihjwzuwph1">
+				<a target="_blank" href="https://dexscreener.com/ethereum/0xb2b4554acf93731d6008990f5034e1f1647ae49f">
 					<svg
 						className="h-auto w-[50px] sm:h-14 lg:h-20"
 						xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ function Links({ className }) {
 			<li className="">
 				<a
 					target="_blank"
-					href="https://www.dextools.io/app/en/solana/pair-explorer/3jsizpKZ3ka4kT6LCRP6Evh16CeSEnLxGWiHjwzuwPh1?t=1720816193301"
+					href="https://www.dextools.io/app/en/ether/pair-explorer/0xb2b4554acf93731d6008990f5034e1f1647ae49f?t=1722433474353"
 				>
 					<Image
 						className="h-[77px] w-auto"
