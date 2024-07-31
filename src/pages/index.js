@@ -16,7 +16,7 @@ export default function Home() {
 		<main
 			className={`flex min-h-screen w-full flex-col items-center gap-10 overflow-hidden bg-pink-100 py-12 text-[20px] font-semibold sm:px-8 ${nunito.className}`}
 		>
-			<Image src={onigiri} className="w-[600px] max-w-[85%]" />
+			<Image src={onigiri} width={600} height={600} className="w-[600px] max-w-[85%]" />
 			<div className="flex w-full justify-evenly sm:justify-center sm:gap-6">
 				<div className="w-[120px] rounded-xl sm:w-[150px] md:h-[260px] md:w-[200px]">
 					<Image className="rotating-element h-full rounded-xl shadow-xl" src={onigirismad} />
