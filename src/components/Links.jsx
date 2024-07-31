@@ -9,7 +9,7 @@ function Links({ className }) {
 				</a>
 			</li>
 			<li className="">
-				<a target="_blank" href="https://t.me/onigiri_cto">
+				<a target="_blank" href="https://t.me/onigiridogesbrother">
 					<Image
 						className="h-[77px] w-[auto]"
 						src="/telegramlogo.svg"
